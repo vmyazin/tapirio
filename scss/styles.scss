@@ -68,8 +68,8 @@ small {
 }
 
 .jumbotron {
-  background-color: rgba(0, 0, 0, .1);
-  background-image: url(/images/bg-nyc1.jpg);
+  background-color: #2e2825;
+  // background-image: url(/images/bg-nyc1.jpg);
   background-position: center top 8%;
   background-size: cover;
   color: #f8f6e4;
@@ -84,6 +84,12 @@ small {
 
   h1 {
     font-size: 4rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -102,7 +108,7 @@ small {
   min-height: 65vh;
 
   img {
-   max-width: 400px;
+   max-width: 100%;
    width: auto;
   }
 
@@ -120,7 +126,7 @@ small {
 }
 
 $caption-padding: 6px;
-$caption-color: rgba(63, 27, 11, 0.8);
+$caption-color: rgba(33, 21, 15, 0.8);
 
 .caption {
   margin-left: $caption-padding * 1.5;
@@ -218,7 +224,7 @@ $caption-color: rgba(63, 27, 11, 0.8);
           }
         }
       }
-  }
+    }
   }
 }
 
@@ -229,13 +235,13 @@ $caption-color: rgba(63, 27, 11, 0.8);
   overflow: hidden;
 
   img {
-  object-fit: cover;
-  max-height: 160px;
-  width: 100%;
-  position: relative;
-  z-index: -1;
-  display: block;
-  transition: transform 8s ease-in;
+    object-fit: cover;
+    max-height: 160px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: block;
+    transition: transform 8s ease-in;
   }
 }
 
@@ -247,15 +253,15 @@ $caption-color: rgba(63, 27, 11, 0.8);
 
 .footer {
   ul {
-  li {
-    a {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    li {
+      a {
+        padding-left: .5rem;
+        padding-right: .5rem;
+      }
     }
   }
-  }
   .social-link {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -264,23 +270,23 @@ $caption-color: rgba(63, 27, 11, 0.8);
   border-color: rgba(0, 0, 0, .2);
 
   &:focus {
-  background-color: white;
+    background-color: white;
   }
 }
 
 .search-container {
   .form-control {
-  max-width: 300px;
-  padding-right: 28px;
+    max-width: 300px;
+    padding-right: 28px;
   }
 
   [class*="close"] {
-  position: absolute;
-  right: 43px;
-  top: 8px;
-  z-index: 3;
-  cursor: pointer;
-  --ggs: 1;
+    position: absolute;
+    right: 43px;
+    top: 8px;
+    z-index: 3;
+    cursor: pointer;
+    --ggs: 1;
   }
 }
 
@@ -290,32 +296,32 @@ $caption-color: rgba(63, 27, 11, 0.8);
   box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
 
   li {
-  a {
-    display: block;
-    padding: 10px 15px;
-    color: $text-color;
-
-    &:hover {
-    background-color: $main-bg;
-    color: inherit;
-    }
-  }
-
-  &:first-child {
     a {
-    padding-top: 15px;
-    border-radius: 4px 4px 0 0;
-    }
-  }
-  &:last-child {
-    a {
-    padding-bottom: 15px;
-    border-radius: 0 0 4px 4px;
-    }
-  }
+      display: block;
+      padding: 10px 15px;
+      color: $text-color;
 
-  &:only-child {
-    a { border-radius: 4px; }
-  }
+      &:hover {
+        background-color: $main-bg;
+        color: inherit;
+      }
+    }
+
+    &:first-child {
+      a {
+        padding-top: 15px;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+    &:last-child {
+      a {
+        padding-bottom: 15px;
+        border-radius: 0 0 4px 4px;
+      }
+    }
+
+    &:only-child {
+      a { border-radius: 4px; }
+    }
   }
 }

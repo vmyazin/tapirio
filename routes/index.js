@@ -52,6 +52,8 @@ router.route('/api/search').get(cors(), async (req, res) => {
 router.get('/blog/:filename', async (req, res) => {
   const slug = req.params.filename;
   const postMetaData = blog.getPostMetadata(slug);
+  const nextPostMetaData = blog.getPostMetadata(slug, 1);
+  const prevPostMetaData = blog.getPostMetadata(slug, -1);
 
   if (!postMetaData) {
     res.render('blog-not-found', slug);
@@ -60,6 +62,7 @@ router.get('/blog/:filename', async (req, res) => {
 
   res.render('article', Object.assign({},
     { postMetaData },
+    { nextPostMetaData, prevPostMetaData },
     { blogInfo },
     {
       content: await blog.renderMarkdown(slug),

@@ -61,8 +61,9 @@ class MarkdownBlog {
     return this.posts_;
   }
   
-  getPostMetadata(slug) {
-    return this.posts_.find(a => a.slug === slug);
+  getPostMetadata(slug, offset = 0) {
+    const postIndex = this.posts_.findIndex(a => a.slug === slug);
+    return this.posts_[postIndex + offset];
   }
   
   async renderMarkdown(slug) {

@@ -233,6 +233,31 @@ $caption-color: rgba(33, 21, 15, 0.8);
   }
 }
 
+.post-nav {
+  [class*="gg"] {
+    vertical-align: sub;
+    --ggs: .8;
+  }
+
+  a {
+    color: $text-color;
+    line-height: 1.4;
+
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  .direction {
+    color: $light-gray;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: $font-sm;
+  }
+}
+
 .img-gradient {
   background: linear-gradient(45deg, rgba(191,195,0,0.3) 0%, rgba(37,37,189,0.3) 35%, rgba(0,212,255,0.5) 100%);
   max-width: 300px;

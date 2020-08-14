@@ -42,7 +42,15 @@ small {
 
 p,
 li {
-  line-height: 1.65;
+  line-height: 1.7;
+}
+
+a {
+  color: $link-color;
+  
+  &:hover {
+    color: lighten($link-color, 5%);
+  }
 }
 
 .navbar {
@@ -124,6 +132,10 @@ li {
       margin-right: 4px;
     }
   }
+
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 .font-light {
@@ -193,6 +205,10 @@ $caption-color: rgba(33, 21, 15, 0.8);
   &.featured {
     display: flex;
     flex-flow: wrap;
+
+    h3 {
+      font-size: 1.6rem;
+    }
 
     li {
       width: 48%;

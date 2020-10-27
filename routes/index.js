@@ -1,7 +1,7 @@
 const cors = require('cors')
 const express = require('express');
 const router = express.Router();
-router.blogPath = './content/articles/';
+router.blogPath = __dirname + '/../content/articles/';
 const MarkdownBlog = require('../scripts/blog-setup');
 const blog = new MarkdownBlog(router.blogPath);
 const blogInfo = blog.info;

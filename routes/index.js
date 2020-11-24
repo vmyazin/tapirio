@@ -9,7 +9,7 @@ blog.init().then(() => blog.sortBy({ property: "date", asc: false }));
 
 router.get('/', (req, res) => {
   const articles = blog.posts;
-  res.render('index', { articles, blogInfo, path: req.path });
+  res.render('home', { articles, blogInfo, path: req.path });
 });
 
 router.get('/tags', async (req, res) => {

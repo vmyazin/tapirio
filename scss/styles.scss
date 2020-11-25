@@ -147,12 +147,22 @@ a {
     }
   }
 
-  .post-title {
+  h1 {
     font-size: 3rem;
   }
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
   }
 
   ul, ol {
@@ -445,3 +455,12 @@ $caption-color: rgba(33, 21, 15, 0.8);
   border-right-color: unset;
 }
 
+.alert {
+  p {
+    font-size: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

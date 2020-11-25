@@ -13,7 +13,9 @@ tags: wordpress
 Building from scratch is not always clear, especially if you are at the crossroads of web technologies. Database or not? PHP or Python? Statically generated or a single-page React app? It can quickly get overwhelming.
 
 <div class="alert alert-warning mb-5 role="alert">
+<p>
 <b>Disclaimer:</b> if you would like to use Tapirio today, you need to have at least some level of familiarity with coding, specifically JavaScript. Also, you need to be friendly with the terminal app and the command line.
+</p>
 </div>
 
 ## Here’s Why I Would Recommend Tapirio

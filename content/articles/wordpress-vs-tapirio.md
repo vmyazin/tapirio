@@ -39,6 +39,6 @@ I by no means decided to bash WordPress simply to promote Tapirio, a platform Iâ
 
 ## How You Can Start Using Tapirio Today
 
-Go to our Github repo and fork or clone a version of Tapirio for your own experimentation. Try building a simple blog or a static site. We will share instructions on how to deploy Tapirio sites to Heroku and Linode in the future.
+Go to [our Github repo](https://github.com/vmyazin/tapirio) and fork or clone a version of Tapirio for your own experimentation. Try building a simple blog or a static site. We will share instructions on how to deploy Tapirio sites to Heroku and Linode in the future.
 
-Let us know if you need any support, would like to contribute, or have ideas. Tapirio is a free, open-source project, and we welcome you to try, participate, and contribute.
+[Let us know](mailto:support@tapirio.com) if you need any support, would like to contribute, or have ideas. Tapirio is a free, open-source project, and we welcome you to try, participate, and contribute.

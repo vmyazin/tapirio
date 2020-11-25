@@ -164,10 +164,15 @@ a {
     }
   }
 
-  h2 + ol {
+  h2 + ol,
+  p + ol {
     li {
       font-size: 1.5rem;
       font-weight: 600;
+
+      > h3 {
+        display: inline;
+      }
     }
   }
 

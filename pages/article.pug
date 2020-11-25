@@ -7,11 +7,18 @@ block content
     .blog-content
       .row
         .col.col-md-2
-          h2.font-light
+          .post-nav.font-light
             a.hidden-link(href="/blog/")
               ion-icon.align-middle(name="arrow-back")
               | Posts
         .col-md-8
+          figure
+            img(src=postMetaData.image alt="postMetaData.description")
+            if postMetaData.imageDesc
+              figcaption= postMetaData.imageDesc
+            else
+              figcaption= postMetaData.description
+
           p.author
             if postMetaData.author
               =postMetaData.author
@@ -19,7 +26,7 @@ block content
               =blogInfo.blog.author
             span.separator | 
             =postMetaData.date
-          h3.post-title= postMetaData.title
+          h1.post-title= postMetaData.title
           | !{content}
 
           p Tags: 

@@ -2,17 +2,17 @@
 title: Why You Should Choose Tapirio Over WordPress
 date: 11-25-2020
 author: Vasily Myazin
-description: Why you might want to prefer Tapirio over WordPress for your next project. Here are 5 points you should review that speak in favor of Tapirio.
+description: Why you might prefer Tapirio over WordPress for your next project. Here are 5 points you should review that speak in favor of Tapirio.
 image: /images/blog/wordpress-vs-tapirio.jpg
 tags: wordpress
 ---
-*If you are looking to jump-start a new blog or a website, the most popular choice for the technology is, without a doubt, WordPress. Not everyone ends up using it, but many people at least entertain the idea. After all, WP offers a robust publishing system that comes with a massive repository of plugins that can satisfy your every need. Not to mention all of the free and for-sale design themes you can use.*
+**If you are looking to jump-start a new blog or a website, the most popular choice for the technology is, without a doubt, WordPress. Not everyone ends up using it, but many people at least entertain the idea. After all, WP offers a robust publishing system that comes with a massive repository of plugins that can satisfy your every need. Not to mention all of the free and for-sale design themes you can use.**
 
 **“Should I Use WordPress Or Build From Scratch?”** is a very popular question on Google search. It’s a valid idea to ponder. With the “Swiss army knife” (or kitchen sink) package comes a lot of baggage. The learning curve can be surprisingly steep with a solution like WordPress.
 
-Building from scratch is not always clear, especially if you are at the crossroads of web technologies. Database or not? PHP or Python? Statically generated or a single-page React app? It can quickly get overwhelming.
+Building from scratch is often a vague starting point, especially if you are at the crossroads of web technologies. Database or not? PHP or Python? Statically generated or a single-page React app? It can quickly get overwhelming.
 
-<div class="alert alert-warning mb-5 role="alert">
+<div class="alert alert-warning mb-5" role="alert">
 <p>
 <b>Disclaimer:</b> if you would like to use Tapirio today, you need to have at least some level of familiarity with coding, specifically JavaScript. Also, you need to be friendly with the terminal app and the command line.
 </p>
@@ -24,7 +24,7 @@ Building from scratch is not always clear, especially if you are at the crossroa
 The underlying stack is very light and swift. We based our server on ExpressJS (which is written in Node) that runs locally and on the server without taking up a lot of CPU or memory.
 
 2. ### Easy installation
-Clone the Git, launch your favorite code editor app, update the preferences file, install dependencies (with just one command) and you are good to go.
+Clone the Git repo, launch your favorite code editor app, update the preferences file, install dependencies and you are good to go.
 
 3. ### No database
 It’s so much easier to deploy and migrate a solution that doesn’t rely upon a database. Tapirio uses Markdown format with extendable meta configuration in each blog article file. You can add a database if you want since there are no limits.
@@ -37,7 +37,7 @@ JavaScript, including CoffeeScript and Microsoft's TypeScript, is far and away t
 
 ## What Using Tapirio Means To Us
 
-I by no means decided to bash WordPress simply to promote Tapirio, a platform I’m privy to. On the contrary, I appreciate and use WP for various projects. There are certain advantages that more complex and mature systems have over the light-weight “build-it-yourself” boilerplate solutions. The point I’m making is that we, the people behind Tapirio, are trying to solve the issue of having direct access to a small amount of code that has several basic foundational things. Upon them, we can build quick static sites and blogs and move fast with design customizations and code maintenance.
+I by no means want to bash WordPress simply to promote Tapirio, a platform I’m obviously privy to. On the contrary, I appreciate WordPress and use for various projects. There are certain advantages that more complex and mature systems have over the light-weight “build-it-yourself” boilerplate solutions. The point I’m making is that we, the people behind Tapirio, are creating of not having direct access to a small amount of code that has several basic foundational things. Upon them, we can build quick static sites and blogs and move fast with design customizations and code maintenance.
 
 ## How You Can Start Using Tapirio Today
 

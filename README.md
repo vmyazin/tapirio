@@ -10,6 +10,8 @@ How to get going:
 
 `cd tapirio`
 
+`mv preferences-default.json preferences.json`
+
 `yarn`
 
 `yarn start`

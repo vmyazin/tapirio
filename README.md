@@ -10,7 +10,7 @@ How to get going:
 
 `cd tapirio`
 
-`mv preferences-default.json preferences.json`
+`mv content/preferences-default.json content/preferences.json`
 
 `yarn`
 

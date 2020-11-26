@@ -4,7 +4,7 @@ const router = express.Router();
 router.blogPath = './content/articles/';
 const MarkdownBlog = require('../scripts/app.functions');
 const blog = new MarkdownBlog(router.blogPath);
-const blogInfo = blog.info;
+const blogInfo = project.info;
 blog.init().then(() => blog.sortBy({ property: "date", asc: false }));
 
 router.get('/', (req, res) => {

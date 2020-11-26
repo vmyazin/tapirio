@@ -1,7 +1,7 @@
 {
   "project": {
-    "title": "Tapirio",
-    "author": "Vasily Myazin",
+    "title": "Tapirio Blog",
+    "author": "Author Name",
     "description": "Made for the dev-savvy. Great for blogs and static websites. Customizeable, flexible, fast.",
     "URL": "https://dev.tapirio.com"
   },
@@ -10,9 +10,9 @@
     "facebookApp": "BBCCDD"
   },
   "social": {
-    "facebook": "https://facebook.com",
-    "twitter": "https://twitter.com/usetapirio",
-    "instagram": "https://instagram.com",
-    "linkedin": "https://linkedin.com"
+    "facebook": "https://facebook.com/project-name",
+    "twitter": "https://twitter.com/project-name",
+    "instagram": "https://instagram.com/project-name",
+    "linkedin": "https://linkedin.com/project-name"
   }
 }

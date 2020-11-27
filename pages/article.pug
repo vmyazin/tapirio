@@ -29,6 +29,10 @@ block content
           h1.post-title= postMetaData.title
           | !{content}
 
+          if pollAllowed
+            include partials/_poll
+            
+
           p Tags: 
   
           .alert.alert-secondary(role='tags')
@@ -54,5 +58,7 @@ block content
                     i.gg-arrow-right
                   br
                   span.title "#{nextPostMetaData.title}"
+
+
 
   include partials/footer

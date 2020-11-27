@@ -1,0 +1,35 @@
+.poll
+  .box
+    h4 Are you a fan of this blog?
+    form
+      ul.list-unstyled
+        li
+          label
+            input(type='radio')
+            | Yes
+        li
+          label
+            input(type='radio')
+            | Sometimes
+        li
+          label
+            input(type='radio')
+            | No
+      .d-flex.justify-content-around.mt-4
+        a.btn.btn-info.btn-rounded.btn-lg(href="#") Vote
+        a.btn.btn-terciary.btn-rounded.btn-lg(href="#") Results
+
+.my-3
+.poll.mb-5
+  .box
+    h4 Are you a fan of this blog?
+    ul.list-unstyled.results
+      li
+        label Yes
+        .bar(style="right: 0px;")
+      li
+        label Sometimes
+        .bar(style="right: 50px")
+      li
+        label No
+        .bar(style="right: 70px;")

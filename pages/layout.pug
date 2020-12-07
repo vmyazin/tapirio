@@ -44,8 +44,8 @@ html
         meta(name='twitter:image' content=postMetaData.image)
       //- share image for About
       else if path.includes('about')
-        //- meta(property='og:image' content=imageFullUrl)
-        //- meta(name='twitter:image' content=imageFullUrl)
+        meta(property='og:image' content=imageFullUrl)
+        meta(name='twitter:image' content=imageFullUrl)
       else
         meta(property='og:image' content='/images/og-image.jpg')
 

@@ -7,6 +7,20 @@ const blog = new MarkdownBlog(router.blogPath);
 const blogInfo = blog.info;
 blog.init().then(() => blog.sortBy({ property: "date", asc: false }));
 
+// ask Request for the host name and assign environment name
+function getEnv(host) {
+  if (host.includes('localhost')) {
+    blogInfo.env = 'local'
+  } else if (host.includes('stg')) {
+    blogInfo.env = 'stg'
+  } else {
+    blogInfo.env = 'prod'
+  }
+}
+
+// OG Images
+const aboutImageForShare = "/images/about/og-image-about.jpg"
+
 router.get('/', (req, res) => {
   const articles = blog.posts;
   res.render('home', { articles, blogInfo, path: req.path });
@@ -25,7 +39,10 @@ router.get('/tags/:tag', async (req, res) => {
 });
 
 router.get('/about', (req, res) => {
-  res.render('about', { blogInfo, path: req.path });
+  getEnv(req.get('host'))
+  const homeUrl = req.protocol + '://' + req.get('host'),
+        imageFullUrl = homeUrl + aboutImageForShare
+  res.render('about', { blogInfo, path: req.path, title: "About", imageFullUrl: imageFullUrl });
 });
 
 router.get('/contact', (req, res) => {

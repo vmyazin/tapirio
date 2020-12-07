@@ -19,22 +19,38 @@ html
         title #{postMetaData.title} • #{blogInfo.project.title}
       else
         title= blogInfo.project.title
-    
+
+      meta(property='og:locale' content='en_US')
+      meta(property='og:site_name' content=blogInfo.project.title)
+
       meta(property='og:type' content='website')
       if isBlogPost
-        meta(property='og:title' content=postMetaData.title)
+        meta(property='og:title' content=postMetaData.title + ' by ' + postMetaData.author + ' • ' + blogInfo.project.title)
+        meta(name='twitter:title' content=postMetaData.title + ' by ' + postMetaData.author + ' • ' + blogInfo.project.title)
         meta(property='og:description' content=postMetaData.description)
         meta(name='description' content=postMetaData.description)
+        meta(name='twitter:description' content=postMetaData.description)
         meta(property='og:url' content=path)
       else
-        meta(property='og:title' content=blogInfo.project.description + ' • ' + blogInfo.project.title)
+        meta(property='og:title' content=blogInfo.project.title + ' • ' + blogInfo.project.description)
+        meta(name='twitter:title' content=blogInfo.project.title + ' • ' + blogInfo.project.description)
         meta(property='og:url' content='/')
         meta(property='og:description' content=blogInfo.project.description)
         meta(name='description' content=blogInfo.project.description)
+
+      //- Share images
       if isBlogPost && postMetaData.image !== undefined
         meta(property='og:image' content=postMetaData.image)
+        meta(name='twitter:image' content=postMetaData.image)
+      //- share image for About
+      else if path.includes('about')
+        //- meta(property='og:image' content=imageFullUrl)
+        //- meta(name='twitter:image' content=imageFullUrl)
       else
         meta(property='og:image' content='/images/og-image.jpg')
+
+      meta(name="twitter:card" content="summary_large_image")
+      meta(name="twitter:creator" content="usetapirio")
 
   body
     block content

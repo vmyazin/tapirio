@@ -72,6 +72,10 @@ router.get('/blog/:filename', async (req, res) => {
   const nextPostMetaData = blog.getPostMetadata(slug, 1);
   const prevPostMetaData = blog.getPostMetadata(slug, -1);
 
+  postMetaData.fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl
+  postMetaData.homeUrl = req.protocol + '://' + req.get('host')
+  postMetaData.imageFullUrl = postMetaData.homeUrl + postMetaData.image
+
   if (!postMetaData) {
     res.render('blog-not-found', slug);
     return;

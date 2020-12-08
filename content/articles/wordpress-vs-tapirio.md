@@ -30,7 +30,7 @@ Clone the Git repo, launch your favorite code editor app, update the preferences
 It’s so much easier to deploy and migrate a solution that doesn’t rely upon a database. Tapirio uses Markdown format with extendable meta configuration in each blog article file. You can add a database if you want since there are no limits.
 
 4. ### Insanely customizable (if you know some development)
-You can modify the layout and each page’s logic by jumping into the templates or even the router file. There’s very little prescribing for how you should use Taprio, unlike in WordPress, where you are quite constrained by [“the loop”](https://www.wpbeginner.com/glossary/loop/) and the PHP baggage collected over the years. 
+You can modify the layout and each page’s logic by jumping into the templates or even the router file. There’s very little prescribing for how you should use Tapirio, unlike in WordPress, where you are quite constrained by [“the loop”](https://www.wpbeginner.com/glossary/loop/) and the PHP baggage collected over the years. 
 
 5. ### JavaScript on the front-end and back-end
 JavaScript, including CoffeeScript and Microsoft's TypeScript, is far and away the most popular language, with over 12 million developers using it worldwide. With Tapirio, you can use it to create user interface interaction in the browser, as well as modify the server logic. One language to take care of all the things!

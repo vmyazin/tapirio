@@ -50,3 +50,5 @@ Then when Tapirio site is cloned in git, switch to that directory,
     yarn start
     
 than go to http://localhost:3001
+
+Good luck
